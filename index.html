@@ -43,13 +43,14 @@
     <style type="text/tailwindcss">
         @theme {
             --color-bike-primary: #E76F51;
+            --color-banner: rgba(231, 111, 81, 0.1);
         }
     </style>
 </head>
 
 <body class="font-poppins">
     <!-- Header Section -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto p-5 md:px-16 md:py-8 space-y-12">
         <!-- Navber -->
         <nav>
             <div class="navbar bg-base-100 ">
@@ -86,6 +87,92 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Slider/Carousel contain -->
+        <div class="carousel w-full bg-banner">
+            <!-- slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+
+                <div class="flex justify-center items-center p-24">
+                    <!-- text content -->
+                    <div class="space-y-4 flex-1">
+                        <h1 class="font-bold text-6xl">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-[#000000] opacity-80">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button> 
+                    </div>
+                    <!-- image -->
+                    <div class="flex-1" ><img alt="Tailwind CSS slide example" src="images/slider/bike1.png" class="w-full" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <!-- Content -->
+                <div class="flex justify-center items-center p-24">
+                    <!-- text content -->
+                    <div class="space-y-4 flex-1">
+                        <h1 class="font-bold text-6xl">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-[#000000] opacity-80">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button> 
+                    </div>
+                    <!-- image -->
+                    <div class="flex-1" ><img alt="Tailwind CSS slide example" src="images/slider/bike2.png" class="w-full" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <!-- Content -->
+                <div class="flex justify-center items-center p-24">
+                    <!-- text content -->
+                    <div class="space-y-4 flex-1">
+                        <h1 class="font-bold text-6xl">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-[#000000] opacity-80">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button> 
+                    </div>
+                    <!-- image -->
+                    <div class="flex-1" ><img alt="Tailwind CSS slide example" src="images/slider/bike3.png" class="w-full" /></div>
+                </div>
+
+
+                <!-- arrow content -->
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <!-- Content -->
+                <div class="flex justify-center items-center p-24">
+                    <!-- text content -->
+                    <div class="space-y-4 flex-1">
+                        <h1 class="font-bold text-6xl">Ride-on R15 V4 <br> with Smile</h1>
+                        <p class="text-[#000000] opacity-80">Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button> 
+                    </div>
+                    <!-- image -->
+                    <div class="flex-1" ><img alt="Tailwind CSS slide example" src="images/slider/bike4.png" class="w-full" /></div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main Section -->
